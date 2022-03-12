@@ -1,0 +1,105 @@
+/* Палитра
+цвет основного текста #757575 
+вторичный цвет текста #212121
+белый цвет #FFFFFF
+акцент 1 (синий) #2196F3
+акцент 2 (серый) #2F303A
+*/
+:root {
+  --text-color-primary: #757575;
+  --text-color-title: #212121;
+  --text-color-white: #ffffff;
+  --text-color-black: #000000;
+  --accent-color-primary: #2196f3;
+  --accent-color-secondary: #2f303a;
+}
+
+.page {
+  background-color: var(--text-color-white);
+  color: var(--text-color-primary);
+}
+
+.list {
+  list-style: none;
+}
+
+/* Logo */
+.logo.primary {
+  color: var(--text-color-black);
+}
+.logo.secondary {
+  color: var(--text-color-white);
+}
+.logo.accent {
+  color: var(--accent-color-primary);
+}
+.logo:hover {
+  color: var(--accent-color-primary);
+}
+
+/* site nav */
+.site-nav .link {
+  color: var(--text-color-title);
+}
+.contact-nav .link {
+  color: var(--text-color-primary);
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: var(--accent-color-primary);
+}
+.site-nav .link.current {
+  color: var(--accent-color-primary);
+}
+/* Hero */
+.hero {
+  background-color: var(--accent-color-secondary);
+}
+.hero-title {
+  color: var(--text-color-white);
+}
+.button {
+  background-color: var(--accent-color-primary);
+  color: var(--text-color-white);
+}
+.button.secondary {
+  color: var(--accent-color-primary);
+  background-color: var(--text-color-white);
+}
+.button.secondary:hover,
+.button.secondary:active {
+  background-color: var(--accent-color-primary);
+  color: var(--text-color-white);
+}
+/* Section */
+.section-title {
+  color: var(--text-color-title);
+}
+
+/* Features */
+.feature-list .title {
+  color: var(--text-color-title);
+}
+
+/* Our work */
+
+/* Our command */
+.our-command-list .title {
+  color: var(--text-color-title);
+}
+
+/* Portfolio */
+.portfolio-list .title {
+  color: var(--text-color-title);
+}
+
+/* footer */
+.page-footer {
+  background-color: var(--accent-color-secondary);
+  color: var(--text-color-white);
+}
+.page-footer .link {
+  color: rgba(255, 255, 255, 0.6);
+}
