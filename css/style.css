@@ -25,51 +25,40 @@ body {
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
 /* Header */
-/* Logo */
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  text-decoration: none;
-}
-.logo.primary {
+
   color: var(--text-color-black);
-}
-.logo.secondary {
-  color: var(--text-color-white);
 }
 .logo.accent {
   color: var(--accent-color-primary);
 }
-.link {
+.site-nav .link,
+.contact-nav .link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
-/* site nav */
 .site-nav .link {
-  text-decoration: none;
-
   color: var(--text-color-title);
 }
 .contact-nav .link {
-  text-decoration: none;
-
   color: var(--text-color-primary);
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contact-nav .link:hover,
-.contact-nav .link:focus {
-  color: var(--accent-color-primary);
-}
+.contact-nav .link:focus,
 .site-nav .link.current {
   color: var(--accent-color-primary);
 }
-
 /* Hero */
 .hero {
   background-color: var(--accent-color-secondary);
@@ -170,21 +159,23 @@ body {
   color: var(--text-color-primary);
 }
 
-/* footer */
+/* Footer */
 .page-footer {
   background-color: var(--accent-color-secondary);
+}
+.logo.secondary {
   color: var(--text-color-white);
 }
-.page-footer .address {
+.contact-nav-footer {
+  font-style: normal;
+}
+.contact-nav-footer .address {
   color: var(--text-color-white);
 }
-.page-footer .link {
+.contact-nav-footer .link {
   color: rgba(255, 255, 255, 0.6);
 }
-.page-footer .address,
-.page-footer .link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+.contact-nav-footer .link:hover,
+.contact-nav-footer .link:focus {
+  color: var(--accent-color-primary);
 }
