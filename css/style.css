@@ -14,18 +14,18 @@
   --accent-color-secondary: #2f303a;
 }
 body {
-  background-color: var(--text-color-white);
-  color: var(--text-color-primary);
-
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
+  background-color: var(--text-color-white);
+  color: var(--text-color-primary);
 }
 .list {
   list-style: none;
 }
+/* Header */
 /* Logo */
 .logo {
   font-family: Raleway, sans-serif;
@@ -51,14 +51,14 @@ body {
 
 /* site nav */
 .site-nav .link {
-  color: var(--text-color-title);
-
   text-decoration: none;
+
+  color: var(--text-color-title);
 }
 .contact-nav .link {
-  color: var(--text-color-primary);
-
   text-decoration: none;
+
+  color: var(--text-color-primary);
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -75,19 +75,16 @@ body {
   background-color: var(--accent-color-secondary);
 }
 .hero-title {
-  color: var(--text-color-white);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  color: var(--text-color-white);
 }
 .button {
-  background-color: var(--accent-color-primary);
-  color: var(--text-color-white);
-
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -95,17 +92,20 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 
+  background-color: var(--accent-color-primary);
+  color: var(--text-color-white);
+
   cursor: pointer;
 }
 .button.secondary {
-  color: var(--text-color-black);
-  background-color: #f5f4fa;
-
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
+  color: var(--text-color-black);
+  background-color: #f5f4fa;
 }
 .button.secondary:hover,
 .button.secondary:focus {
@@ -115,31 +115,33 @@ body {
 
 /* Section */
 .section-title {
-  color: var(--text-color-title);
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
+
+  color: var(--text-color-title);
 }
 
 /* Features */
 .feature-list .title {
-  color: var(--text-color-title);
-
   font-weight: 700;
   line-height: 1.14;
+  font-size: 14px;
   text-transform: uppercase;
+
+  color: var(--text-color-title);
 }
 
 /* Our work */
 
 /* Our command */
 .our-command-list .title {
-  color: var(--text-color-title);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
+
+  color: var(--text-color-title);
 }
 .our-command-list .text {
   font-size: 16px;
@@ -147,22 +149,25 @@ body {
 }
 
 /* Portfolio */
+.portfolio-list .link {
+  font-style: normal;
+  text-decoration: none;
+}
 .portfolio-list .title {
-  color: var(--text-color-title);
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  color: var(--text-color-title);
 }
 .portfolio-list .desc {
-  color: var(--text-color-primary);
-
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.88;
-}
-.portfolio-list .link {
-  font-style: normal;
-  text-decoration: none;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color-primary);
 }
 
 /* footer */
@@ -170,14 +175,14 @@ body {
   background-color: var(--accent-color-secondary);
   color: var(--text-color-white);
 }
-.page-footer .contact-nav .address {
+.page-footer .address {
   color: var(--text-color-white);
 }
-.page-footer .contact-nav .link {
+.page-footer .link {
   color: rgba(255, 255, 255, 0.6);
 }
-.contact-nav .address,
-.contact-nav .link {
+.page-footer .address,
+.page-footer .link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
